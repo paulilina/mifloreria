@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .marca {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #ff7f7f;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff7f7f;
+    transform: translateY(-5px); 
+    color: #fff;
+}
+
+nav ul li a:active {
+    background-color: #ff4c4c;
+    transform: translateY(2px);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.planta {
+    padding: 10px;
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.planta button {
+    background-color: #ff7f7f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+.planta button:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.1); 
+}
+
+.planta button:active {
+    background-color: #ff1f1f; 
+    transform: scale(0.9); 
+}
+
+.resena {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff3e0;
+}
+
+.planta img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.planta p {
+    margin: 5px 0;
+}
+
+.planta p:last-of-type {
+    font-weight: bold;
+    color: #ff5722; 
+}
+
+.resenas .resena {
+    background-color: #ffe4e1; 
+    border: 1px solid #ff7f7f; 
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.resenas .resena span {
+    color: #ff5722; 
+    font-size: 1.2em;
+}
+
+.formulario-reseña {
+    background-color: #ffffff; 
+    border: 1px solid #ff7f7f; 
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.formulario-reseña h2 {
+    color: #ff4c4c;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.formulario-reseña label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.formulario-reseña input,
+.formulario-reseña textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.formulario-reseña button {
+    background-color: #ff7f7f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formulario-reseña button:hover {
+    background-color: #ff4c4c; 
+    transform: scale(1.05); 
+}
+
+.formulario-reseña button:active {
+    background-color: #ff1f1f;
+    transform: scale(0.95); 
+}
+
+@media (max-width: 768px) {
+    .formulario-reseña input,
+    .formulario-reseña textarea {
+        font-size: 12px;
+    }
+
+    .formulario-reseña button {
+        font-size: 14px;
+    }
+}
